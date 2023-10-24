@@ -1,0 +1,56 @@
+/* Common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  /* Utilities */
+  
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .title {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .color-blue {
+    color: blue;
+  }
+
+  .color-green {
+    color: green;
+  }
+  
+  .posters {
+    display: flex;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .poster {
+    width: 400px;
+    padding: 0.5rem;
+  }
+  
+  .poster img {
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgb(106, 106, 106);
+    width: 100%;
+  }

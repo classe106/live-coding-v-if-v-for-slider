@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue 3 v-if v-for</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <div class="container">
+            <h1 class="title" :class="userText.length !== '' ? 'color-green' : '' ">The Office</h1>
+            <div class="posters">
+                <input type="text" v-model="userText">
+                <button @click="toggleImage()">
+                    <span v-if="show === false">Mostra</span>
+                    <span v-else>Nascondi</span>
+                    poster
+                </button>
+                <div class="poster" v-if="show">
+                    <img :src="imgUrl" alt="">
+                </div>
+                <!-- <h3 v-else>Nessuna immagine disponibile</h3> -->
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
